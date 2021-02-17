@@ -1,4 +1,9 @@
 @import "./styles/variables";
 @import "./styles/typography";
+@import "./styles/mixins";
+@import "./styles/base";
 @import "./styles/resets";
 @import "./styles/layout";
+
+// components
+@import "./components/styles/header";

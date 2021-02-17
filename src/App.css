@@ -1,7 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@font-face {
+  font-family: "Hurme Geometric Sans";
+  src: url(/src/assets/fonts/Hurme/HurmeGeometricSans3.otf);
+}
+
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1540px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+body {
+  font-family: "Hurme Geometric Sans", sans-serif;
+}
+
+body {
+  background: url(/src/assets/desktop/main-bg-01.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5rem;
+  height: 3.75rem;
+  background-color: #121212;
+}
+
+@media (min-width: 992px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+.mobile-nav .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.desktop-nav {
+  display: none;
+  position: fixed;
+  -ms-grid-rows: 4.44rem 1fr 4.44rem;
+      grid-template-rows: 4.44rem 1fr 4.44rem;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  width: 4.2rem;
+  background-color: #121212;
+  height: 100vh;
+  z-index: 99;
+}
+
+@media (min-width: 992px) {
+  .desktop-nav {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.desktop-nav #name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  white-space: nowrap;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  margin-bottom: 6.67rem;
+}
+
+.desktop-nav #name span {
+  font-weight: 600;
+}
+
+.desktop-nav .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.desktop-nav .row2 {
+  color: #fff;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.desktop-nav .row3 {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  display: inline-block;
+  fill: #fff;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: inline-block;
+  position: relative;
+  height: 1.2rem;
+  width: 1.88rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-menu:focus {
+  outline: none;
+}
+
+.burger-menu .burger-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 0.2em;
+}
+
+.burger-menu .burger-line-center {
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.burger-menu .burger-line-bottom {
+  top: unset;
+  bottom: 0;
 }
 /*# sourceMappingURL=App.css.map */

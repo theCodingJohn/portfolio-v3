@@ -1,10 +1,14 @@
+import React from "react"
+
+// pages
+import {Home} from "./pages"
+
+// 
 import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
-      Hello
-    </div>
+    <Home />
   );
 }
 

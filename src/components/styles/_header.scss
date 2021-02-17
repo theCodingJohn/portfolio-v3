@@ -1,0 +1,96 @@
+.mobile-nav {
+  @include flex($justify: flex-start);
+  padding: 0 1.5rem;
+  height: 3.75rem;
+  background-color: $nav-light;
+  @media (min-width: $l) {
+    display: none;
+  }
+
+  .row {
+    @include flex($justify: space-between);
+    width: 100%;
+  }
+}
+
+.desktop-nav {
+  display: none;
+  position: fixed;
+  grid-template-rows: 4.44rem 1fr 4.44rem;
+  grid-template-columns: 100%;
+  width: 4.2rem;
+  background-color: $nav-light;
+  height: 100vh;
+  z-index: 99;
+  @media (min-width: $l) {
+    display: grid;
+  }
+
+  #name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    white-space: nowrap;
+    transform: rotate(270deg);
+    margin-bottom: 6.67rem;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .row {
+    @include flex();
+  }
+
+  .row2 {
+    color: $text-light;
+    align-items: flex-end;
+  }
+
+  .row3 {
+    border-top: 1px solid rgba($color: $burger-light, $alpha: 0.2);
+  }
+}
+
+.logo {
+  display: inline-block;
+  fill: $logo-light;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.burger-menu {
+  display: inline-block;
+  position: relative;
+  height: 1.2rem;
+  width: 1.88rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  .burger-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: $burger-light;
+    height: 0.2em;
+
+    &-center {
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+
+    &-bottom {
+      top: unset;
+      bottom: 0;
+    }
+  }
+}
