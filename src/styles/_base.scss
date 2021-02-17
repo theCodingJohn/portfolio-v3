@@ -1,6 +1,9 @@
 body {
   background: url(/src/assets/desktop/main-bg-01.jpg) no-repeat center fixed;
   background-size: cover;
+  @media (min-width: $l) {
+    background-position: bottom right;
+  }
 }
 
 .overlay {

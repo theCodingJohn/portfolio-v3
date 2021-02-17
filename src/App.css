@@ -41,6 +41,12 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 992px) {
+  body {
+    background-position: bottom right;
+  }
+}
+
 .overlay {
   background: rgba(0, 0, 0, 0.8);
 }
