@@ -41,11 +41,30 @@ body {
   background-size: cover;
 }
 
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.home {
+  padding-top: 3.75rem;
+}
+
+@media (min-width: 992px) {
+  .home {
+    padding-top: 0;
+    padding-left: 4.2rem;
+  }
+}
+
+header {
+  position: fixed;
 }
 
 .mobile-nav {
@@ -63,6 +82,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 1.5rem;
+  width: 100vw;
   height: 3.75rem;
   background-color: #121212;
 }
@@ -92,7 +112,6 @@ body {
 
 .desktop-nav {
   display: none;
-  position: fixed;
   -ms-grid-rows: 4.44rem 1fr 4.44rem;
       grid-template-rows: 4.44rem 1fr 4.44rem;
   -ms-grid-columns: 100%;
@@ -191,5 +210,55 @@ body {
 .burger-menu .burger-line-bottom {
   top: unset;
   bottom: 0;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 1.5rem;
+  height: calc(100vh - 3.75rem);
+  max-height: 42.25rem;
+}
+
+@media (min-width: 992px) {
+  .hero {
+    height: 100vh;
+    max-height: 100vh;
+    padding: 7rem 5rem 7rem 7rem;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+.hero .row {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (min-width: 992px) {
+  .hero .row {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+.hero h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.75rem;
+  line-height: 1.05;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+}
+
+@media (min-width: 992px) {
+  .hero h1 {
+    font-size: 5.34rem;
+  }
 }
 /*# sourceMappingURL=App.css.map */

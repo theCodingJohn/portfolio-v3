@@ -1,6 +1,11 @@
+header {
+  position: fixed;
+}
+
 .mobile-nav {
   @include flex($justify: flex-start);
   padding: 0 1.5rem;
+  width: 100vw;
   height: 3.75rem;
   background-color: $nav-light;
   @media (min-width: $l) {
@@ -15,7 +20,6 @@
 
 .desktop-nav {
   display: none;
-  position: fixed;
   grid-template-rows: 4.44rem 1fr 4.44rem;
   grid-template-columns: 100%;
   width: 4.2rem;
