@@ -25,6 +25,7 @@
   h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 3.75rem;
+    text-transform: capitalize;
     line-height: 1.05;
     text-shadow: 0.1rem 0.1rem 0.5rem black;
     @media (min-width: $l) {
