@@ -1,13 +1,20 @@
 .projects {
   padding: 2.5rem 1.5rem;
   display: grid;
-  grid-row-gap: 4rem;
+  grid-row-gap: 6rem;
   overflow: hidden;
   color: $white;
   fill: $white;
-  height: 50vh;
   @media (min-width: $l) {
     grid-row-gap: 0;
+  }
+
+  .row1 {
+    @media (min-width: $l) {
+      // min-height: 5.84rem;
+      display: flex;
+      align-items: center;
+    }
   }
 
   .row1 .col1 {
@@ -16,6 +23,15 @@
     @media (min-width: $l) {
       justify-content: flex-start;
     }
+  }
+
+  .row2 .col1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
   }
 
   .rocket-heading {
@@ -42,5 +58,6 @@
 @media (min-width: $l) {
   .projects {
     padding: 0 5rem;
+    grid-template-rows: 9.22rem 1fr 1rem;
   }
 }
