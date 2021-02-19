@@ -105,15 +105,15 @@
   }
 
   span {
-    bottom: -10px;
-    left: -90px;
+    bottom: -0.56rem; // -10px
+    left: -5rem; // -90px
     width: 13rem;
     height: 0.1875rem;
 
     svg {
       top: 0;
       bottom: 0;
-      right: -42px;
+      right: -2.34rem; // -42px
       margin: auto;
       transform: rotate(45deg);
     }

@@ -24,14 +24,15 @@ const About = () => {
         trigger: ".rocket-heading-mobile",
         start: "top center",
       },
-      ease: "easeIn",
+      ease: "Power3.easeIn",
       x: -300
     })
 
     gsap.from(".about .row2", {
       scrollTrigger: {
         trigger: ".about .row2",
-        start: "top center",
+        start: "top center+=60rem",
+        markers: true
       },
       opacity: 0,
       y: 50

@@ -413,8 +413,8 @@ header {
 }
 
 .rocket-heading-desktop span {
-  bottom: -10px;
-  left: -90px;
+  bottom: -0.56rem;
+  left: -5rem;
   width: 13rem;
   height: 0.1875rem;
 }
@@ -422,7 +422,7 @@ header {
 .rocket-heading-desktop span svg {
   top: 0;
   bottom: 0;
-  right: -42px;
+  right: -2.34rem;
   margin: auto;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
