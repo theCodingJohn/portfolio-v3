@@ -31,8 +31,7 @@ const About = () => {
     gsap.from(".about .row2", {
       scrollTrigger: {
         trigger: ".about .row2",
-        start: "top center+=60rem",
-        markers: true
+        start: "top center+=60rem"
       },
       opacity: 0,
       y: 50
