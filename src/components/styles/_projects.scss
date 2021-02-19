@@ -1,0 +1,46 @@
+.projects {
+  padding: 2.5rem 1.5rem;
+  display: grid;
+  grid-row-gap: 4rem;
+  overflow: hidden;
+  color: $white;
+  fill: $white;
+  height: 50vh;
+  @media (min-width: $l) {
+    grid-row-gap: 0;
+  }
+
+  .row1 .col1 {
+    display: flex;
+    justify-content: center;
+    @media (min-width: $l) {
+      justify-content: flex-start;
+    }
+  }
+
+  .rocket-heading {
+    span {
+      background-color: $white;
+    }
+  }
+
+  .rocket-heading-mobile {
+    span {
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+
+  .rocket-heading-desktop {
+    span {
+      width: 15rem;
+    }
+  }
+}
+
+@media (min-width: $l) {
+  .projects {
+    padding: 0 5rem;
+  }
+}
