@@ -379,21 +379,53 @@ header {
 
 .rocket-heading span {
   position: absolute;
-  top: -2.5rem;
-  left: 2.8125rem;
   display: inline-block;
-  height: 5.625rem;
-  width: 0.1875rem;
   background-color: black;
 }
 
 .rocket-heading span svg {
   position: absolute;
   width: 2.1875rem;
-  bottom: -2.3125rem;
+}
+
+.rocket-heading-mobile span {
+  top: -2.5rem;
+  left: 2.8125rem;
+  height: 5.625rem;
+  width: 0.1875rem;
+}
+
+.rocket-heading-mobile span svg {
   left: -1rem;
+  bottom: -2.3125rem;
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
+}
+
+.rocket-heading-desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .rocket-heading-desktop {
+    display: inline-block;
+  }
+}
+
+.rocket-heading-desktop span {
+  bottom: -10px;
+  left: -90px;
+  width: 13rem;
+  height: 0.1875rem;
+}
+
+.rocket-heading-desktop span svg {
+  top: 0;
+  bottom: 0;
+  right: -42px;
+  margin: auto;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 @media (min-width: 992px) {
@@ -410,7 +442,7 @@ header {
   min-width: 3rem;
   text-align: center;
   margin: 0 0.5rem 1rem 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .resume-button {
