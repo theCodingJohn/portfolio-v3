@@ -26,7 +26,7 @@ const About = () => {
       duration: 1,
       scrollTrigger: {
         trigger: ".about .rocket-heading-mobile",
-        start: "top center",
+        start: "top bottom-=150rem",
       },
       ease: "Power3.easeIn",
       x: -300
@@ -35,7 +35,7 @@ const About = () => {
     gsap.from(".about .row2", {
       scrollTrigger: {
         trigger: ".about .row2",
-        start: "top center+=60rem"
+        start: "top bottom-=150rem"
       },
       opacity: 0,
       y: 50

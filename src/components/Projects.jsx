@@ -33,10 +33,20 @@ const Projects = () => {
       duration: 1,
       scrollTrigger: {
         trigger: ".projects .rocket-heading-mobile",
-        start: "top center"
+        start: "top bottom-=150rem",
       },
       ease: "Power3.easeIn",
       x: -350
+    })
+
+    gsap.from(".projects .project-card-wrapper", {
+      scrollTrigger: {
+        trigger: ".projects .row1 .col1",
+        start: "top bottom-=150rem"
+      },
+      opacity: 0,
+      stagger: 0.3,
+      y: -30
     })
   }, [])
 
