@@ -56,7 +56,7 @@ const Services = () => {
         <div className="col col2">
           <h3>web development</h3>
           <p>I pretty much enjoy working on building websites. So, if you have a design layout (PSD/PDF/AI/XD/Figma/Sketch) and need someone to build and bring it on the web, then don’t hesitate to get in touch with me.</p>
-          <a href="#" type="button">
+          <a href="#contact" type="button">
             <span>Contact</span>
           </a>
         </div>
