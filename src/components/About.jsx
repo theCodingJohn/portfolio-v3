@@ -23,7 +23,7 @@ const About = () => {
     });
 
     gsap.from(".about .rocket-heading-desktop", {
-      duration: 1,
+      duration: 0.6,
       scrollTrigger: {
         trigger: ".about .rocket-heading-mobile",
         start: "top bottom-=150rem",

@@ -341,7 +341,6 @@ header {
   grid-row-gap: 4rem;
   overflow: hidden;
   background-color: #fff;
-  font-size: 1.34rem;
 }
 
 @media (min-width: 992px) {
@@ -353,8 +352,10 @@ header {
 }
 
 .about p {
+  font-size: 1.1rem;
   margin-bottom: 1rem;
   max-width: 35.88rem;
+  line-height: 1.5;
 }
 
 @media (min-width: 992px) {
@@ -470,15 +471,15 @@ header {
 
 .resume-button:hover span {
   text-indent: -1.9rem;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
 .resume-button:hover span::after {
   opacity: 1;
   text-indent: 0px;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
 .resume-button span {
@@ -516,6 +517,157 @@ header {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.7rem;
+  }
+}
+
+.services {
+  padding: 2.5rem 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 5rem;
+  background-color: #fff;
+  color: #000;
+  overflow: hidden;
+}
+
+.services h3 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+
+.services p {
+  font-size: 1.1rem;
+  margin-bottom: 1.6rem;
+  line-height: 1.5;
+}
+
+.services a {
+  display: inline-block;
+  font-size: 1rem;
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+  width: 6rem;
+  height: 2rem;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.services a:hover {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.services a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.services .row1 .col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .services .row1 .col1 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.services .row2 {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 2.3rem;
+  grid-column-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 992px) {
+  .services .row2 {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.services .row2 .col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services .row2 img {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .services .row2 img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .services .row2 img {
+    width: 100%;
+  }
+}
+
+.services .row2 .col2 {
+  max-width: 29rem;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.services .rocket-heading span {
+  background-color: #000;
+}
+
+.services .rocket-heading-mobile span {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.services .rocket-heading-desktop span {
+  width: 15rem;
+}
+
+@media (min-width: 992px) {
+  .services {
+    padding: 2.5rem 5rem 5rem 5rem;
+  }
+  .services .row2 .col1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 

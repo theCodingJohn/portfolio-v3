@@ -1,7 +1,7 @@
 import React from "react";
 
 // components
-import {Header, Hero, About, Projects} from "../components"
+import {Header, Hero, About, Projects, Services} from "../components"
 
 const Home = () => {
   return (
@@ -11,6 +11,7 @@ const Home = () => {
         <Hero />
         <About />
         <Projects />
+        <Services />
       </main>
     </>  
   )
