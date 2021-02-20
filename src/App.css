@@ -273,6 +273,7 @@ header {
 }
 
 .burger-menu .burger-line-center {
+  opacity: 1;
   top: 0;
   bottom: 0;
   margin: auto 0;

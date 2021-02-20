@@ -1,6 +1,41 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import gsap from "gsap"
 
 const Header = () => {
+  const [menuTl] = useState(gsap.timeline({ paused: true, duration: 0.5 }));
+  const [menuDesktopTl] = useState(gsap.timeline({ paused: true, duration: 0.5 }));
+
+
+  useEffect(() => {
+    menuTl
+      .to(".burger-line-center", {
+      opacity: 0
+      })
+      .to(".burger-line-top", {
+        y:"0.515625rem" // 8.25px
+      }, 0)
+      .to(".burger-line-bottom", {
+        y: "-0.515625rem" // 8.25px
+      }, 0)
+      .to(".burger-line-top", {
+        rotate: 45,
+        scaleX: 0.8
+      }, 0.5)
+      .to(".burger-line-bottom", {
+        rotate: -45,
+        scaleX: 0.8
+      }, 0.5)
+      .reverse();
+  }, [])
+
+  const toggleMenuTimeline = () => {
+    menuTl.reversed(!menuTl.reversed());
+  };
+
+  const toggleMenuDesktopTimeline = () => {
+    menuDesktopTl.reversed(!menuDesktopTl.reversed());
+  };
+
   return (
     <header>
       {/* navbar for mobile */}
@@ -116,7 +151,7 @@ const Header = () => {
             </a>
           </div>
           <div className="col co2">
-            <button className="burger-menu">
+            <button onClick={toggleMenuTimeline} className="burger-menu">
               <div className="burger-line burger-line-top"></div>
               <div className="burger-line burger-line-center"></div>
               <div className="burger-line burger-line-bottom"></div>
@@ -241,7 +276,7 @@ const Header = () => {
         </div>
         <div className="row row3">
           <div className="burger-container">
-            <button className="burger-menu">
+            <button onClick={toggleMenuTimeline} className="burger-menu">
               <div className="burger-line burger-line-top"></div>
               <div className="burger-line burger-line-center"></div>
               <div className="burger-line burger-line-bottom"></div>
