@@ -58,7 +58,9 @@ const Projects = () => {
         </div>
       </div>
       <div className="row row3">
-        <div className="col col1"></div>
+        <div className="col col1">
+          <button>Load More</button>
+        </div>
       </div>
     </section>
   )

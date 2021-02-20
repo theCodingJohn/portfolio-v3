@@ -531,7 +531,7 @@ header {
 
 @media (min-width: 992px) {
   .projects {
-    grid-row-gap: 0;
+    grid-row-gap: 2rem;
   }
 }
 
@@ -578,6 +578,55 @@ header {
       grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
 }
 
+@media (min-width: 992px) {
+  .projects .row2 .col1 {
+    margin-top: -2rem;
+  }
+}
+
+.projects .row3 {
+  margin-top: -4rem;
+}
+
+@media (min-width: 992px) {
+  .projects .row3 {
+    margin-top: 0;
+  }
+}
+
+.projects .row3 .col1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .row3 .col1 button {
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  text-indent: 0.2rem;
+  text-transform: uppercase;
+  height: 3.44rem;
+  width: 12.125rem;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.projects .row3 .col1 button:hover {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
 .projects .rocket-heading span {
   background-color: #fff;
 }
@@ -595,8 +644,8 @@ header {
 @media (min-width: 992px) {
   .projects {
     padding: 0 5rem;
-    -ms-grid-rows: 9.22rem 1fr 1rem;
-        grid-template-rows: 9.22rem 1fr 1rem;
+    -ms-grid-rows: 9.22rem 1fr 6rem;
+        grid-template-rows: 9.22rem 1fr 6rem;
   }
 }
 
@@ -619,7 +668,7 @@ header {
   height: 15.625rem;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   border-radius: 0.625rem;
   overflow: hidden;
   cursor: pointer;
@@ -628,7 +677,7 @@ header {
 }
 
 .project-card:hover {
-  background-size: 120% auto;
+  background-size: 120% 120%;
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
 }
@@ -679,6 +728,10 @@ header {
   border-radius: 100%;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.project-card .svg-wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .project-card .svg-wrapper p {

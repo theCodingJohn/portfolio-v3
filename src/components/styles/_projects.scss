@@ -6,7 +6,7 @@
   color: $white;
   fill: $white;
   @media (min-width: $l) {
-    grid-row-gap: 0;
+    grid-row-gap: 2rem;
   }
 
   .row1 {
@@ -32,6 +32,41 @@
     grid-row-gap: 1.5rem;
     grid-column-gap: 1.5rem;
     grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    @media (min-width: $l) {
+      margin-top: -2rem;
+    }
+  }
+
+  .row3 {
+    margin-top: -4rem;
+    @media (min-width: $l) {
+      margin-top: 0;
+    }
+  }
+
+  .row3 .col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      cursor: pointer;
+      background-color: transparent;
+      color: inherit;
+      border: none;
+      font-size: 0.8rem;
+      letter-spacing: 0.2rem;
+      text-indent: 0.2rem;
+      text-transform: uppercase;
+      height: 3.44rem;
+      width: 12.125rem;
+      transition: all 600ms ease;
+
+      &:hover {
+        background: rgba($color: $black, $alpha: 0.5);
+        transition: all 600ms ease;
+      }
+    }
   }
 
   .rocket-heading {
@@ -58,6 +93,6 @@
 @media (min-width: $l) {
   .projects {
     padding: 0 5rem;
-    grid-template-rows: 9.22rem 1fr 1rem;
+    grid-template-rows: 9.22rem 1fr 6rem;
   }
 }
