@@ -8,11 +8,11 @@ import ProjectCard from "./ProjectCard"
 
 // images 
 import photosnap from "../assets/desktop/photosnap.png"
-import photo2 from "../assets/desktop/photo2.png"
-import photo3 from "../assets/desktop/photo3.png"
-import photo4 from "../assets/desktop/photo4.png"
-import photo5 from "../assets/desktop/photo5.png"
-import photo6 from "../assets/desktop/photo6.png"
+import creativeAgency from "../assets/desktop/creative-agency.png"
+import clockApp from "../assets/desktop/clock-app.png"
+import ipTracker from "../assets/desktop/ip-tracker.png"
+import traktTv from "../assets/desktop/trakt-tv.png"
+import restApi from "../assets/desktop/rest-api.png"
 
 const Projects = () => {
 
@@ -45,7 +45,7 @@ const Projects = () => {
         start: "top bottom-=150rem"
       },
       opacity: 0,
-      stagger: 0.3,
+      stagger: 0.1,
       y: -30
     })
   }, [])
@@ -59,19 +59,19 @@ const Projects = () => {
       </div>
       <div className="row row2">
         <div className="col col1">
-          <ProjectCard attribute={{image: `${photosnap}`}}/>
-          <ProjectCard attribute={{image: `${photo2}`}}/>
-          <ProjectCard attribute={{image: `${photo3}`}}/>
-          <ProjectCard attribute={{image: `${photo4}`}}/>
-          <ProjectCard attribute={{image: `${photo5}`}}/>
-          <ProjectCard attribute={{image: `${photo6}`}}/>
+          <ProjectCard attribute={{image: `${photosnap}`, link: "https://photosnap-omega.vercel.app/"}}/>
+          <ProjectCard attribute={{image: `${creativeAgency}`, link: "https://github.com/theCodingJohn/Creative-Agency"}}/>
+          <ProjectCard attribute={{image: `${clockApp}`, link: "https://clock-app.thecodingjohn.vercel.app/"}}/>
+          <ProjectCard attribute={{image: `${ipTracker}`, link: "https://ip-address-tracker-alpha.netlify.app/"}}/>
+          <ProjectCard attribute={{image: `${traktTv}`, link: "https://thecodingjohn.github.io/traktTv-page-clone/"}}/>
+          <ProjectCard attribute={{image: `${restApi}`, link: "https://restcountries-api-jc.netlify.app/"}}/>
         </div>
       </div>
-      <div className="row row3">
+      {/* <div className="row row3">
         <div className="col col1">
           <button>Load More</button>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
