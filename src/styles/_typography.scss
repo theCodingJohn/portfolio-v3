@@ -2,7 +2,22 @@
 
 @font-face {
   font-family: "Hurme Geometric Sans";
-  src: url(/src/assets/fonts/Hurme/HurmeGeometricSans3.otf);
+  src: url(/src/assets/fonts/Hurme/HurmeGeometricSans3.otf) format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Hurme Geometric Sans";
+  src: url(/src/assets/fonts/Hurme/HurmeGeometricSans3SemiBold.otf)
+    format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Hurme Geometric Sans";
+  src: url(/src/assets/fonts/Hurme/HurmeGeometricSans3Black.otf)
+    format("opentype");
+  font-weight: 800;
 }
 
 html {
