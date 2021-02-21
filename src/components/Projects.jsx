@@ -51,7 +51,7 @@ const Projects = () => {
   }, [])
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className="row row1">
         <div className="col col1">
           <RocketHeading title="projects"/>

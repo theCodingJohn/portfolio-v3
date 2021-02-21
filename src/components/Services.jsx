@@ -43,7 +43,7 @@ const Services = () => {
   }, [])
 
   return (
-    <section className="services">
+    <section id="services" className="services">
       <div className="row row1">
         <div className="col col1">
           <RocketHeading title="services"/>
