@@ -13,7 +13,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.body.classList = `main-bg-0${Math.floor(Math.random() * 5) + 1}`;
+    document.body.classList = `main-bg-0${Math.floor(Math.random() * 7) + 1}`;
     setTimeout(() => {
       setLoading(false)
     }, 1000);
