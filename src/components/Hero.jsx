@@ -3,7 +3,7 @@ import gsap from 'gsap'
 
 const Hero = () => {
   useEffect(() => {
-    gsap.from(".hero h1", { duration: 1, y: "5rem", opacity: 0 });
+    gsap.from(".hero h1", { duration: 1, delay: 1, y: "5rem", opacity: 0 });
   }, [])
 
   return (

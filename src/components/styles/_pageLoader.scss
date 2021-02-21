@@ -1,0 +1,45 @@
+.page-loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 999;
+
+  .loader div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-width: 4px;
+    border-style: solid;
+    opacity: 1;
+    border-radius: 50%;
+    animation: loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+
+  div:nth-child(1) {
+    border-color: $orange;
+  }
+
+  div:nth-child(2) {
+    border-color: $cyan;
+    animation-delay: -0.5s;
+  }
+}
+
+@keyframes loader {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    width: 4.12rem;
+    height: 4.12rem;
+    opacity: 0;
+  }
+}
