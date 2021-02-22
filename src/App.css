@@ -836,6 +836,7 @@ header {
   display: -ms-grid;
   display: grid;
   grid-row-gap: 6rem;
+  background: #1d2225;
   overflow: hidden;
   color: #fff;
   fill: #fff;
@@ -933,10 +934,14 @@ header {
   transition: all 600ms ease;
 }
 
-.projects .row3 .col1 button:hover {
+.projects .row3 .col1 button:hover, .projects .row3 .col1 button:focus {
   background: rgba(0, 0, 0, 0.5);
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
+}
+
+.projects .row3 .col1 button:focus {
+  outline: none;
 }
 
 .projects .rocket-heading span {

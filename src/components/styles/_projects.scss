@@ -2,6 +2,7 @@
   padding: 2.5rem 1.5rem;
   display: grid;
   grid-row-gap: 6rem;
+  background: $projects-bg;
   overflow: hidden;
   color: $white;
   fill: $white;
@@ -62,9 +63,14 @@
       width: 12.125rem;
       transition: all 600ms ease;
 
-      &:hover {
+      &:hover,
+      &:focus {
         background: rgba($color: $black, $alpha: 0.5);
         transition: all 600ms ease;
+      }
+
+      &:focus {
+        outline: none;
       }
     }
   }

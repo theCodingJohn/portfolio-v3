@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -14,7 +14,27 @@ import ipTracker from "../assets/desktop/ip-tracker.png"
 import traktTv from "../assets/desktop/trakt-tv.png"
 import restApi from "../assets/desktop/rest-api.png"
 
+const cardDetails = [
+  { id: 1, image: `${photosnap}`, link: "https://photosnap-omega.vercel.app/" },
+  { id: 2, image: `${creativeAgency}`, link: "https://creativeagencyv1.netlify.app/" },
+  { id: 3, image: `${clockApp}`, link: "https://clock-app.thecodingjohn.vercel.app/" },
+  { id: 4, image: `${ipTracker}`, link: "https://ip-address-tracker-alpha.netlify.app/" },
+  { id: 5, image: `${traktTv}`, link: "https://thecodingjohn.github.io/traktTv-page-clone/" },
+  { id: 6, image: `${restApi}`, link: "https://restcountries-api-jc.netlify.app/" },
+]
+
 const Projects = () => {
+  const [visible, setVisible] = useState(6);
+
+  const cards = cardDetails.slice(0, visible).map(item => <ProjectCard key={item.id} attribute={{ ...item }} />);
+
+  const showMoreCard = () => {
+    if (visible > cardDetails.length) {
+      setVisible(6);
+    } else {
+      setVisible(prev => prev + 3);
+    }
+  }
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -59,19 +79,18 @@ const Projects = () => {
       </div>
       <div className="row row2">
         <div className="col col1">
-          <ProjectCard attribute={{image: `${photosnap}`, link: "https://photosnap-omega.vercel.app/"}}/>
-          <ProjectCard attribute={{image: `${creativeAgency}`, link: "https://creativeagencyv1.netlify.app/"}}/>
-          <ProjectCard attribute={{image: `${clockApp}`, link: "https://clock-app.thecodingjohn.vercel.app/"}}/>
-          <ProjectCard attribute={{image: `${ipTracker}`, link: "https://ip-address-tracker-alpha.netlify.app/"}}/>
-          <ProjectCard attribute={{image: `${traktTv}`, link: "https://thecodingjohn.github.io/traktTv-page-clone/"}}/>
-          <ProjectCard attribute={{image: `${restApi}`, link: "https://restcountries-api-jc.netlify.app/"}}/>
+          {cards}
         </div>
       </div>
-      {/* <div className="row row3">
+      {
+        visible < cardDetails.length
+        &&
+      <div className="row row3">
         <div className="col col1">
-          <button>Load More</button>
+          <button onClick={showMoreCard}>Load More</button>
         </div>
-      </div> */}
+      </div>
+      }
     </section>
   )
 }
