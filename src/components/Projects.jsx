@@ -60,7 +60,7 @@ const Projects = () => {
       <div className="row row2">
         <div className="col col1">
           <ProjectCard attribute={{image: `${photosnap}`, link: "https://photosnap-omega.vercel.app/"}}/>
-          <ProjectCard attribute={{image: `${creativeAgency}`, link: "https://github.com/theCodingJohn/Creative-Agency"}}/>
+          <ProjectCard attribute={{image: `${creativeAgency}`, link: "https://creativeagencyv1.netlify.app/"}}/>
           <ProjectCard attribute={{image: `${clockApp}`, link: "https://clock-app.thecodingjohn.vercel.app/"}}/>
           <ProjectCard attribute={{image: `${ipTracker}`, link: "https://ip-address-tracker-alpha.netlify.app/"}}/>
           <ProjectCard attribute={{image: `${traktTv}`, link: "https://thecodingjohn.github.io/traktTv-page-clone/"}}/>
