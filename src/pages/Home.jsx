@@ -4,7 +4,6 @@ import React from "react";
 import {Header, Hero, About, Projects, Services} from "../components"
 
 const Home = () => {
-  console.log("https://www.twine.net/codingjohn");
   return (
     <>
       <Header />
