@@ -3,7 +3,7 @@ import React from 'react'
 const ProjectCard = ({ attribute }) => {
 
   return (
-    <a href={attribute.link} target="_blank" rel="noreferrer noopener" className="project-card-wrapper">
+    <a href={attribute.link} target="_blank" rel="noreferrer noopener" className={`project-card-wrapper ${attribute.class || ""}`}>
       <div className="project-card" style={{ backgroundImage: `url(${attribute.image})` }}>
         <div className="overlay">
           <div className="svg-wrapper">
