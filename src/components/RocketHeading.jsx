@@ -5,7 +5,7 @@ const RocketHeading = ({title}) => {
   return (
     <>
       <h2 className="rocket-heading rocket-heading-mobile">{title}
-        <span>
+        {/* <span>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 512.001 512.001" style={{ enableBackground: "new 0 0 512.001 512.001"}} xmlSpace="preserve">
             <g>
@@ -111,10 +111,10 @@ const RocketHeading = ({title}) => {
             <g>
             </g>
           </svg>
-        </span>
+        </span> */}
       </h2>
       <h2 className="rocket-heading rocket-heading-desktop">{title}
-        <span>
+        {/* <span>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 512.001 512.001" style={{ enableBackground: "new 0 0 512.001 512.001"}} xmlSpace="preserve">
             <g>
@@ -220,7 +220,7 @@ const RocketHeading = ({title}) => {
             <g>
             </g>
           </svg>
-        </span>
+        </span> */}
       </h2>  
     </>
   )

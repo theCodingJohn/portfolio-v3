@@ -63,7 +63,7 @@ const Header = () => {
       <nav className="mobile-nav">
         <div className="row">
           <div className="col col1">
-            <a href="/" type="button" className="logo">
+            {/* <a href="/" type="button" className="logo">
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 512.001 512.001" style={{ enableBackground: "new 0 0 512.001 512.001"}} xmlSpace="preserve">
               <g>
@@ -169,7 +169,7 @@ const Header = () => {
               <g>
               </g>
               </svg>
-            </a>
+            </a> */}
           </div>
           <div className="col col2">
             <button onClick={toggleMobileMenuTimeline} className="burger-menu">
@@ -209,7 +209,7 @@ const Header = () => {
       {/* sidebar for desktop */}
       <nav className="desktop-nav">
         <div className="row row1">
-          <a href="/" type="button" className="logo">
+          {/* <a href="/" type="button" className="logo">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 512.001 512.001" style={{ enableBackground: "new 0 0 512.001 512.001"}} xmlSpace="preserve">
               <g>
@@ -315,7 +315,7 @@ const Header = () => {
               <g>
               </g>
             </svg>
-          </a>
+          </a> */}
         </div>
         <div className="row row2">
           <h2 id="name"><span>John</span> Cunanan</h2>
