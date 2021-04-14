@@ -1,3 +1,4 @@
+@import "/styles/mixins";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
 @font-face {
@@ -8,34 +9,36 @@
 
 @font-face {
   font-family: "Hurme Geometric Sans";
-  src: url(/public/assets/fonts/Hurme/HurmeGeometricSans3SemiBold.otf)
-    format("opentype");
+  src: url(./fonts/Hurme/HurmeGeometricSans3SemiBold.otf) format("opentype");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Hurme Geometric Sans";
-  src: url(/public/assets/fonts/Hurme/HurmeGeometricSans3Black.otf)
-    format("opentype");
+  src: url(./fonts/Hurme/HurmeGeometricSans3Black.otf) format("opentype");
   font-weight: 800;
 }
 
-html {
-  font-size: 16px;
-  @media (min-width: $m) {
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Hurme Geometric Sans", sans-serif;
+  @include mediumScreen() {
     font-size: 17px;
   }
-  @media (min-width: $l) {
+  @include largeScreen() {
     font-size: 18px;
   }
-  @media (min-width: $xl) {
+  @include xlScreen() {
     font-size: 20px;
   }
-  @media (min-width: $xxl) {
+  @include xxlScreen() {
     font-size: 24px;
   }
 }
 
-body {
-  font-family: "Hurme Geometric Sans", sans-serif;
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
