@@ -6,7 +6,7 @@
   grid-template-rows: 4.44rem 1fr 4.44rem;
   grid-template-columns: 100%;
   width: 4.2rem;
-  background-color: $black;
+  background-color: #121212;
   height: 100vh;
   @include largeScreen() {
     display: grid;
