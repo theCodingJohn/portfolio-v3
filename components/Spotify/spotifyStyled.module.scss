@@ -1,0 +1,103 @@
+@import "/styles/variables";
+
+.spotify {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  bottom: 1.875rem;
+  right: 1.875rem;
+  width: 50%;
+  min-width: 14.375rem;
+  max-width: 15.188rem;
+  height: 4.375rem;
+  color: rgba($color: #ffffff, $alpha: 0.8);
+  border-radius: 8px;
+  padding: 0.313rem 1.25rem;
+  background: rgba($color: $black, $alpha: 0.6);
+  font-size: 0.688rem;
+  z-index: 4;
+
+  &::after {
+    position: absolute;
+    content: "Listening to:";
+    font-size: 0.7rem;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1rem;
+    top: -1.1rem;
+    left: 0.25rem;
+  }
+
+  .closeButton {
+    position: absolute;
+    cursor: pointer;
+    right: 0.5rem;
+    top: 0.25rem;
+    width: 0.5rem;
+    fill: $white;
+  }
+
+  .largeImage {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    transform: scaleY(0);
+    top: -9.375rem;
+    right: 0;
+    opacity: 0;
+    padding: 0.5rem;
+    width: 9.375rem;
+    height: 9.375rem;
+  }
+
+  .image {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.125rem;
+    cursor: pointer;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 4.375rem;
+    z-index: 2;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 3.125rem;
+  }
+
+  .title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 0.813rem;
+    text-align: left;
+    letter-spacing: 1px;
+    overflow: hidden;
+    width: 90%;
+  }
+
+  .artist {
+    text-align: left;
+    color: #afafaf;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 90%;
+    white-space: nowrap;
+  }
+
+  .equalizer {
+    position: absolute;
+    height: 1.125rem;
+    bottom: 0;
+    left: 4.375rem;
+  }
+}

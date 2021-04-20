@@ -41,5 +41,10 @@
   },
   "devDependencies": {
     "eslint": "^7.24.0"
+  },
+  "build": {
+    "transpile": [
+      "gsap"
+    ]
   }
 }
