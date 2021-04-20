@@ -1,7 +1,8 @@
 @import "/styles/mixins";
 
-@include largeScreen() {
-  .home {
+.home {
+  padding-top: 3.75rem;
+  @include largeScreen() {
     padding-top: 0;
     padding-left: 4.2rem;
   }

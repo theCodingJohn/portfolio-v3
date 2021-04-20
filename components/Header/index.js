@@ -1,6 +1,6 @@
-import DesktopNav from "./DesktopNav";
+import DesktopNav from "../DesktopNav";
 import style from "./header.module.scss";
-import MobileNav from "./MobileNav";
+import MobileNav from "../MobileNav";
 
 const links = ["about", "projects", "contact"];
 

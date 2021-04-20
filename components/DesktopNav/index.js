@@ -1,8 +1,8 @@
 import Link from "next/link";
 import style from "./desktop-nav.module.scss";
-import { GithubIcon, CodepenIcon, LinkedinIcon } from "../utils/svgs";
+import { GithubIcon, CodepenIcon, LinkedinIcon } from "../../utils/svgs";
 import gsap from "gsap";
-import BurgerMenu from "./BurgerMenu";
+import BurgerMenu from "../BurgerMenu";
 import { useEffect, useState } from "react";
 
 const DesktopNav = ({ links }) => {

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import style from "./mobile-nav.module.scss";
-import { GithubIcon, CodepenIcon, LinkedinIcon } from "../utils/svgs";
+import { GithubIcon, CodepenIcon, LinkedinIcon } from "../../utils/svgs";
 import gsap from "gsap";
-import BurgerMenu from "./BurgerMenu";
+import BurgerMenu from "../BurgerMenu";
 
 const MobileNav = ({ links }) => {
   const [menuTl] = useState(gsap.timeline({ paused: true, duration: 0.2 }));

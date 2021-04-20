@@ -1,8 +1,9 @@
 import Head from "next/head";
 import styled from "styled-components";
-import style from "./index.module.scss";
+import style from "../styles/Home.module.scss";
 
-import { Header, Hero } from "../components";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
 
 const HomePage = () => {
   return (
@@ -11,15 +12,11 @@ const HomePage = () => {
         <title>Home</title>
       </Head>
       <Header />
-      <Main className={style.home}>
+      <main className={style.home}>
         <Hero />
-      </Main>
+      </main>
     </>
   );
 };
-
-const Main = styled.main`
-  padding-top: 3.75rem;
-`;
 
 export default HomePage;
