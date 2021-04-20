@@ -1,0 +1,96 @@
+@import "/styles/variables";
+@import "/styles/mixins";
+
+.footer {
+  position: relative;
+  height: 21.938rem;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: $black;
+  color: $white;
+  @include mediumScreen() {
+    height: 14rem;
+    padding: 2.7rem;
+  }
+
+  @include largeScreen() {
+    padding: 0 5rem 0 9.2rem;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../public/assets/desktop/inspiration-geometry.png);
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+
+    @include mediumScreen() {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 1.875rem;
+    line-height: 1.4;
+    margin-bottom: 1.75rem;
+
+    .underline {
+      display: inline-block;
+      background-color: $white;
+      width: 1.25rem;
+      height: 0.25rem;
+      animation: blink 900ms infinite;
+      margin-left: 0.25rem;
+    }
+
+    @include mediumScreen() {
+      margin-bottom: 0;
+    }
+  }
+
+  .contact {
+    display: inline;
+    position: relative;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      height: 2px;
+      background-color: $white;
+      width: 100%;
+    }
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
