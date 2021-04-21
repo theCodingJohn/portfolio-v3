@@ -9,7 +9,6 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 
 const HomePage = ({ nowPlaying }) => {
-  console.log(nowPlaying);
   return (
     <>
       <Head>
