@@ -6,6 +6,7 @@ import style from "../styles/Home.module.scss";
 import SpotifyPlayer from "../components/Spotify";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Projects from "../components/Projects";
 import Footer from "../components/Footer";
 
 const HomePage = ({ nowPlaying }) => {
@@ -18,6 +19,7 @@ const HomePage = ({ nowPlaying }) => {
       {nowPlaying && <SpotifyPlayer data={nowPlaying} />}
       <main className={style.home}>
         <Hero />
+        <Projects />
       </main>
       <Footer />
     </>

@@ -1,17 +1,20 @@
+@import "/styles/variables";
+@import "/styles/mixins";
+
 .projects {
   padding: 2.5rem 1.5rem;
   display: grid;
   grid-row-gap: 6rem;
-  background: $projects-bg;
+  background: #1d2225;
   overflow: hidden;
   color: $white;
   fill: $white;
-  @media (min-width: $l) {
+  @include largeScreen() {
     grid-row-gap: 2rem;
   }
 
   .row1 {
-    @media (min-width: $l) {
+    @include largeScreen() {
       // min-height: 5.84rem;
       display: flex;
       align-items: center;
@@ -21,7 +24,7 @@
   .row1 .col1 {
     display: flex;
     justify-content: center;
-    @media (min-width: $l) {
+    @include largeScreen() {
       justify-content: flex-start;
     }
   }
@@ -33,14 +36,14 @@
     grid-row-gap: 1.5rem;
     grid-column-gap: 1.5rem;
     grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
-    @media (min-width: $l) {
+    @include largeScreen() {
       margin-top: -2rem;
     }
   }
 
   .row3 {
     margin-top: -4rem;
-    @media (min-width: $l) {
+    @include largeScreen() {
       margin-top: 0;
     }
   }
@@ -74,29 +77,9 @@
       }
     }
   }
-
-  .rocket-heading {
-    span {
-      background-color: $white;
-    }
-  }
-
-  .rocket-heading-mobile {
-    span {
-      left: 0;
-      right: 0;
-      margin: auto;
-    }
-  }
-
-  .rocket-heading-desktop {
-    span {
-      width: 15rem;
-    }
-  }
 }
 
-@media (min-width: $l) {
+@include largeScreen() {
   .projects {
     padding: 0 5rem;
     grid-template-rows: 9.22rem 1fr 6rem;

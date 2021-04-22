@@ -41,6 +41,11 @@ const MobileNav = ({ links }) => {
         <div className={`${style.col} ${style.col2}`}>
           <div></div>
           {navLinks}
+          <li>
+            <Link href="mailto:codingjohn@outlook,com">
+              <a>Contact</a>
+            </Link>
+          </li>
           <div className={style.socialLinksContainer}>
             <a
               href="https://github.com/theCodingJohn"

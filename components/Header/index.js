@@ -2,7 +2,7 @@ import DesktopNav from "../DesktopNav";
 import style from "./header.module.scss";
 import MobileNav from "../MobileNav";
 
-const links = ["about", "projects", "contact"];
+const links = ["about", "projects"];
 
 const Header = () => {
   return (
