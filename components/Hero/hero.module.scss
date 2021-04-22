@@ -1,0 +1,86 @@
+@import "/styles/variables";
+@import "/styles/mixins";
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: $white;
+  padding: 1.5rem;
+  height: calc(100vh - 3.75rem);
+  max-height: 42.25rem;
+  @include largeScreen() {
+    height: 100vh;
+    max-height: 100vh;
+    padding: 7rem 5rem 7rem 7rem;
+    align-items: flex-end;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .row {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    @include largeScreen() {
+      margin: 0;
+      max-width: 100%;
+    }
+  }
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.75rem;
+    text-transform: capitalize;
+    line-height: 1.05;
+    text-shadow: 0.1rem 0.1rem 0.5rem $black;
+    @include largeScreen() {
+      font-size: 5.34rem;
+    }
+  }
+}
+
+.bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.mainBg01 {
+  background-image: url(../../public/assets/desktop/main-bg-01.jpg);
+  @include largeScreen() {
+    background-position: bottom right;
+  }
+}
+
+.mainBg02 {
+  background-image: url(../../public/assets/desktop/main-bg-02.jpg);
+}
+
+.mainBg03 {
+  background-image: url(../../public/assets/desktop/main-bg-03.jpg);
+}
+
+.mainBg04 {
+  background-image: url(../../public/assets/desktop/main-bg-04.jpg);
+}
+
+.mainBg05 {
+  background-image: url(../../public/assets/desktop/main-bg-05.jpg);
+}
+
+.mainBg06 {
+  background-image: url(../../public/assets/desktop/main-bg-06.jpg);
+}
+
+.mainBg07 {
+  background-image: url(../../public/assets/desktop/main-bg-07.jpg);
+}

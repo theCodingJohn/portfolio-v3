@@ -1,0 +1,67 @@
+@import "/styles/variables";
+
+.burgerMenu {
+  display: inline-block;
+  position: relative;
+  height: 1.2rem;
+  width: 1.88rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover .burgerLine {
+    background-color: $orange !important;
+    transition: background-color $anim-speed ease;
+  }
+
+  .burgerLine {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: $white;
+    height: 0.2em;
+    transition: background-color $anim-speed ease;
+  }
+
+  .top {
+    top: 0;
+  }
+
+  .center {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
+
+  .bottom {
+    top: unset;
+    bottom: 0;
+  }
+}
+
+.burgerMenuOpen {
+  transition: 5s ease all;
+
+  .center {
+    opacity: 0;
+  }
+
+  .top {
+    transform: translateY(0.515625rem);
+  }
+
+  .bottom {
+    transform: translateY(-0.515625rem);
+  }
+  .center,
+  .top,
+  .bottom {
+    transition: 5s ease all;
+  }
+}

@@ -1,0 +1,85 @@
+@import "/styles/variables";
+@import "/styles/mixins";
+
+.projects {
+  padding: 2.5rem 1.5rem;
+  display: grid;
+  grid-row-gap: 2.5rem;
+  background: #1d2225;
+  overflow: hidden;
+  color: $white;
+  fill: $white;
+  @include largeScreen() {
+    padding: 2.6rem 5rem;
+  }
+
+  h2 {
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 1.85rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+
+  .row1 {
+    @include largeScreen() {
+      display: flex;
+      align-items: center;
+    }
+
+    .col1 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .row2 {
+    .col1 {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-row-gap: 1.5rem;
+      grid-column-gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    }
+  }
+
+  .row3 {
+    margin-top: -4rem;
+    @include largeScreen() {
+      margin-top: 0;
+    }
+  }
+
+  .row3 {
+    .col1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        cursor: pointer;
+        background-color: transparent;
+        color: inherit;
+        border: none;
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem;
+        text-indent: 0.2rem;
+        text-transform: uppercase;
+        height: 3.44rem;
+        width: 12.125rem;
+        transition: all 600ms ease;
+
+        &:hover,
+        &:focus {
+          background: rgba($color: $black, $alpha: 0.5);
+          transition: all 600ms ease;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}

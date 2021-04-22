@@ -1,0 +1,119 @@
+@import "/styles/mixins";
+@import "/styles/variables";
+
+.desktopNav {
+  display: none;
+  grid-template-rows: 4.44rem 1fr 4.44rem;
+  grid-template-columns: 100%;
+  width: 4.2rem;
+  background-color: #121212;
+  height: 100vh;
+  @include largeScreen() {
+    display: grid;
+  }
+
+  .name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    white-space: nowrap;
+    transform: rotate(270deg);
+    margin-bottom: 6.67rem;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row2 {
+    color: $white;
+    align-items: flex-end;
+  }
+
+  .row3 {
+    border-top: 1.3px solid hsla(0, 0%, 100%, 0.2);
+  }
+}
+
+.menu {
+  position: absolute;
+  display: grid;
+  grid-template-rows: 4.44rem 1fr 4.44rem;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  width: 16.67rem;
+  right: 4.22rem;
+  background-color: $white;
+  border-right: 1px solid rgba($color: $black, $alpha: 0.2);
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.13rem;
+  text-transform: capitalize;
+  z-index: -1;
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.4s ease;
+
+    &:hover {
+      color: $orange;
+      transition: color 0.4s ease;
+    }
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col2 {
+    display: grid;
+    align-items: flex-start;
+    height: 100%;
+    padding: 1.5rem;
+  }
+
+  .col3 {
+    border-top: 1px solid rgba($color: $black, $alpha: 0.2);
+    padding: -2.2rem;
+    height: 100%;
+  }
+
+  .socialLinksContainer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.73rem;
+    width: 100%;
+    height: 100%;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      transition: fill 0.4s ease;
+
+      &:hover {
+        fill: $orange;
+        transition: fill 0.4s ease;
+      }
+    }
+  }
+
+  .socialLink {
+    display: grid;
+    place-content: center center;
+    width: 1.59rem;
+    height: 1.067rem;
+    margin-right: 0.34rem;
+  }
+}
