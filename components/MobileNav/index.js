@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import style from "./mobile-nav.module.scss";
-import { GithubIcon, CodepenIcon, LinkedinIcon } from "../../utils/svgs";
+import {
+  GithubIcon,
+  CodepenIcon,
+  LinkedinIcon,
+  FreeCodeCampIcon,
+} from "../../utils/svgs";
 import gsap from "gsap";
 import BurgerMenu from "../BurgerMenu";
 
@@ -62,6 +67,14 @@ const MobileNav = ({ links }) => {
               className={style.socialLink}
             >
               <CodepenIcon />
+            </a>
+            <a
+              href="https://forum.freecodecamp.org/u/Jccnnn/summary"
+              target="_blank"
+              rel="noreferrer noopener"
+              className={style.socialLink}
+            >
+              <FreeCodeCampIcon />
             </a>
             <a
               href="https://www.linkedin.com/in/john-carlo-cunanan-11847a17a"
