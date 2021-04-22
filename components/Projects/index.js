@@ -32,7 +32,6 @@ const Projects = () => {
         trigger: header.current,
         start: "top bottom-=150rem",
       },
-      ease: "Power3.easeIn",
       opacity: 0,
       y: -30,
     });
